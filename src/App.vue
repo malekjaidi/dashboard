@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+  <div class="col-md-2">
+    <side-bar/>
+  </div>
+  <div class="col-md-10">
+    <dash-board/>
+  </div>
+  <!-- <Dashboard /> -->
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import Dashboard from './components/Dashboard.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    // Dashboard
+    // Sidebar
   }
 }
 </script>
@@ -19,8 +26,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
 }
 </style>
