@@ -46,7 +46,13 @@ export default {
 <style scoped>
 .sidebar{
     background-color: azure;
-    height: 100vh;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 17%;
+    
 }
 .title{
     text-align: center;
