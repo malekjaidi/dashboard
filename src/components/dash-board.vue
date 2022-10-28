@@ -9,6 +9,7 @@
             <img class="profile" src="../assets/profile.png">
         </div>
     </div>
+    <!-- <div class="row header"></div> -->
 
     <div class="row body" >
     <div class="chart">
@@ -253,6 +254,7 @@ data(){
     margin-top: 5px;
     margin-bottom: 5px;
     width: 80%;
+    z-index: 1;
     
     
 
@@ -264,6 +266,7 @@ data(){
 .body{
     /* margin-top: 20px; */
     /* margin :5px; */
+    padding-top: 60px;
     border-radius: 1rem;
     border-bottom-width: 1px;
     margin-left: 20px;
