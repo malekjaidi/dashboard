@@ -15,7 +15,7 @@
     <div class="chart">
         <apex-chart
             :type="type"
-            width="400"
+            width="325"
             :options="chartOptions"
             :series="series"
             >
@@ -26,33 +26,35 @@
     <div class="chart">
         <apex-chart
             :type="type1"
-            width="400"
+            width="325"
             :options="chartOptions"
             :series="series"
             >
         </apex-chart>
+    </div>
+
+
+    <div class="chart">
+        <apex-chart 
+              type="donut" 
+              width="325"
+              :options="chartOptions_1" 
+              :series="series_1">
+        </apex-chart>
+
     </div>
     
     <div class="row">
         <div class="chart">
             <apex-chart type="line" 
               height="350" 
-              width="870"
+              width="550"
               :options="chartOptions_2" 
               :series="series_2">
           </apex-chart>
         </div>
     </div>
 
-    <div class="chart">
-        <apex-chart 
-              type="donut" 
-              width="400"
-              :options="chartOptions_1" 
-              :series="series_1">
-        </apex-chart>
-
-    </div>
  
 
 
@@ -254,7 +256,7 @@ data(){
     margin-top: 5px;
     margin-bottom: 5px;
     width: 80%;
-    z-index: 1;
+    z-index: 99;
     
     
 
@@ -266,7 +268,7 @@ data(){
 .body{
     /* margin-top: 20px; */
     /* margin :5px; */
-    padding-top: 60px;
+    padding-top: 50px;
     border-radius: 1rem;
     border-bottom-width: 1px;
     margin-left: 20px;
@@ -277,7 +279,7 @@ data(){
     border-radius: 1rem;
     width:fit-content;
     padding: 10px;
-    margin:20px;
+    margin:12px;
     margin-left:20px;
 
 }

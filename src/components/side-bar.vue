@@ -1,7 +1,12 @@
 <template>
-    <div class="sidebar">
+    <div class="sidebar" v-if="toggle">
         <div class="row title">
-            <h2>My Project</h2>
+            <div class="col-md-9">
+                <h2>My Project</h2>
+            </div>
+            <div class="col-md-2">
+                <img class="toggle" src="../assets/true-1.png" @click="toggleMenu()">
+            </div>
         </div>
         <div class="row">
             <ul class="list">
@@ -38,7 +43,20 @@
 </template>
 <script>
 export default {
+    data(){
+        return{
+            toggle:true,
+
+        }
+    },
 //   name: 'side-bar',
+
+methods:{
+    toggleMenu(){
+        this.toggle=!this.toggle
+
+},
+}
 
     
 }
@@ -48,7 +66,7 @@ export default {
     background-color: azure;
     height: 100%;
     position: fixed;
-    z-index: 1;
+    z-index:99;
     top: 0;
     left: 0;
     width: 17%;
@@ -58,6 +76,7 @@ export default {
     text-align: center;
     height: 80px;
     align-content: center;
+    align-items: center;
 
 }
 .list{
@@ -87,5 +106,10 @@ li{
 img{
     width: 20px;
     margin-right: 5px;
+}
+.toggle{
+margin-right: 10px;
+z-index: 100;
+width: 30px;
 }
 </style>

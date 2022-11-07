@@ -10,6 +10,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 // import VueApexCharts from 'vue-apexcharts'
 import VueApexCharts from "vue3-apexcharts";
+import jQuery from "jquery";
+const $ = jQuery;
+window.$ = $;
 
 
 
